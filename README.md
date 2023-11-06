@@ -62,8 +62,7 @@ user on screen(Use array of structure)
 
 #include <stdio.h>
 
-// Define the structure
-struct books {
+ {
     char title[50];
     char author[50];
     char subject[100];
@@ -71,10 +70,10 @@ struct books {
 };
 
 int main() {
-    // Declare an array of structures to store information about five books
+    
     struct books library[5];
 
-    // Read details of five books from the user
+    
     for (int i = 0; i < 5; i++) {
         printf("Enter details for Book %d:\n", i + 1);
         printf("Title: ");
@@ -87,7 +86,7 @@ int main() {
         scanf("%d", &library[i].book_id);
     }
 
-    // Display the data entered by the user
+    
     printf("\nDetails of Books Entered:\n");
     for (int i = 0; i < 5; i++) {
         printf("Book %d:\n", i + 1);
